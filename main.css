@@ -1,0 +1,55 @@
+.green-link {
+  background-color: #2bb90a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 18px;
+}
+.outlined-link {
+  padding: 8px 12px;
+  border-radius: 18px;
+  border: 1px solid #07301e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+header img {
+  height: 35px;
+}
+header a {
+  color: #07301e;
+  text-decoration: none;
+  margin-left: 15px;
+}
+nav a:hover {
+  color: #2bb90a;
+}
+header .logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+.first-sect {
+  background-color: #e8eae2;
+}
+
+.top-division {
+  display: flex;
+}
+
+.bottom-division {
+  background-color: #07301e;
+  color: white;
+}
+
+.bottom-division img {
+  height: 80px;
+}
+.second-sect {
+  display: flex;
+}
+.advantages {
+  display: flex;
+}
