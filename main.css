@@ -1,13 +1,21 @@
+body {
+  color: #07301e;
+}
+
 .green-link {
   background-color: #2bb90a;
   color: white;
   padding: 8px 12px;
   border-radius: 18px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .outlined-link {
   padding: 8px 12px;
   border-radius: 18px;
   border: 1px solid #07301e;
+  color: #07301e;
+  font-weight: bold;
 }
 
 header {
@@ -31,25 +39,114 @@ header .logo {
   font-size: 40px;
   font-weight: bold;
 }
+
+/* fist section */
 .first-sect {
   background-color: #e8eae2;
+  padding-bottom: 10px;
+  border-radius: 20px;
 }
 
 .top-division {
   display: flex;
+  padding: 10px 100px;
+}
+.section-text,
+.section-image {
+  flex: 1;
+}
+.section-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.section-text p:first-child {
+  color: #2bb90a;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* padding-left: 16px; */
+}
+.section-text p:first-child::before {
+  content: "•";
+  color: #2bb90a;
+  margin-right: 10px;
+}
+.top-division h1 {
+  font-size: 50px;
+  color: #07301e;
+}
+.first-sect a {
+  text-decoration: none;
 }
 
 .bottom-division {
   background-color: #07301e;
   color: white;
+  margin: 14px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+.bottom-division h2 {
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .bottom-division img {
-  height: 80px;
+  height: 50px;
+  margin: 10px 20px;
 }
 .second-sect {
   display: flex;
+  padding: 10px 100px;
+  gap: 55px;
 }
+.second-sect h2 {
+  font-size: 35px;
+}
+
 .advantages {
   display: flex;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+    background: transparent;
+    border: none;
+  }
+  header .green-link {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  .top-division {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .second-sect {
+    padding: 10px;
+  }
+  header {
+    padding: 10px;
+  }
+  .award-logos {
+    display: flex;
+    overflow-x: hidden;
+  }
+  .second-sect {
+    flex-direction: column;
+  }
+  .advantages {
+    flex-direction: column;
+  }
+  .top-division h1 {
+    font-size: 30px;
+  }
 }
